@@ -1,0 +1,21 @@
+
+@echo off
+set "SRC=D:\Antigravity\MKCL Product Web Application\MKCL Logo\Logo"
+set "DEST=D:\Antigravity\MKCLProduct\public\images\logos"
+
+copy "%SRC%\MS-CIT_English.jpg" "%DEST%\ms_cit.jpg"
+copy "%SRC%\KLiC-Courses\KLiC Courses.jpg" "%DEST%\klic_courses.jpg"
+copy "%SRC%\MS-ACIT.jpg" "%DEST%\ms_acit.jpg"
+copy "%SRC%\MOM.jpg" "%DEST%\mom.jpg"
+copy "%SRC%\MS-CIT Refresh.jpg" "%DEST%\mscit_refresh.jpg"
+copy "%SRC%\FutureVedh.jpg" "%DEST%\futurevedh.jpg"
+copy "%SRC%\Mastering Competitive Exams.jpg" "%DEST%\mastering_ce.jpg"
+copy "%SRC%\RecruitLive.jpg" "%DEST%\recruitlive.jpg"
+copy "%SRC%\eAuction.jpg" "%DEST%\eauction.jpg"
+copy "%SRC%\SeTS.jpg" "%DEST%\tenderlive.jpg"
+copy "%SRC%\MP Vanmitra.png" "%DEST%\vanmitra.png"
+copy "%SRC%\SDMMS.jpg" "%DEST%\sdmms.jpg"
+copy "%SRC%\Exam Live_MKCL.jpg" "%DEST%\examlive.jpg"
+copy "%SRC%\TiliMili.jpg" "%DEST%\tilimili.jpg"
+copy "%SRC%\Digital University.jpg" "%DEST%\digital_university.jpg"
+copy "%SRC%\BBA at Workplace_IGNOU.jpg" "%DEST%\work_based.jpg"
