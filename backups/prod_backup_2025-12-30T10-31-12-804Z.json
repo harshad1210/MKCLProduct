@@ -1,0 +1,604 @@
+{
+  "timestamp": "2025-12-30T10-31-12-804Z",
+  "counts": {
+    "users": 8,
+    "products": 30,
+    "documents": 2,
+    "assets": 2,
+    "logs": 20
+  },
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "employeeName": "Harshad Tidake",
+        "mobileNumber": "9209039100",
+        "email": "harshadt@mkcl.org",
+        "username": "admin",
+        "password": "password123",
+        "role": "ADMIN",
+        "updatedBy": "system",
+        "isActive": true,
+        "createdAt": "2025-12-26T10:17:43.016Z",
+        "updatedAt": "2025-12-26T10:17:43.016Z"
+      },
+      {
+        "id": 2,
+        "employeeName": "Atul Patodi",
+        "mobileNumber": "9370287488",
+        "email": "atulp@mkcl.org",
+        "username": "atulp",
+        "password": "35M3aL6j#C4k",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T06:45:58.178Z",
+        "updatedAt": "2025-12-29T06:45:58.178Z"
+      },
+      {
+        "id": 4,
+        "employeeName": "Sonali Katke",
+        "mobileNumber": "9890133613",
+        "email": "sonalik@mkcl.org",
+        "username": "sonalik",
+        "password": "X2p6!G7xS$",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T11:35:44.630Z",
+        "updatedAt": "2025-12-29T11:35:44.630Z"
+      },
+      {
+        "id": 5,
+        "employeeName": "Anupam Narkhede",
+        "mobileNumber": "9920849856",
+        "email": "anupamn@mkcl.org",
+        "username": "anupamn",
+        "password": "TP4!nSEn7d",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T11:39:43.439Z",
+        "updatedAt": "2025-12-29T11:39:43.439Z"
+      },
+      {
+        "id": 6,
+        "employeeName": "Amit Ranade",
+        "mobileNumber": "9960166628",
+        "email": "amitr@mkcl.org",
+        "username": "amitr",
+        "password": "aBK7%HZb9Y",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T11:42:11.151Z",
+        "updatedAt": "2025-12-29T11:42:11.151Z"
+      },
+      {
+        "id": 7,
+        "employeeName": "Khalique Manyar",
+        "mobileNumber": "9922402749",
+        "email": "khaliquem@mkcl.org",
+        "username": "khaliquem",
+        "password": "r$E8x6ZM3F",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T11:44:46.055Z",
+        "updatedAt": "2025-12-29T11:44:46.055Z"
+      },
+      {
+        "id": 8,
+        "employeeName": "Revati Namjoshi",
+        "mobileNumber": "9860252415",
+        "email": "revatin@mkcl.org",
+        "username": "revatin",
+        "password": "SL6@Ywez@G",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T11:47:07.402Z",
+        "updatedAt": "2025-12-29T11:47:07.402Z"
+      },
+      {
+        "id": 9,
+        "employeeName": "Sameer Pande",
+        "mobileNumber": "9822002394",
+        "email": "md@mkcl.org",
+        "username": "sameerp",
+        "password": "WZ5dmB!Lw!",
+        "role": "SYSADMIN",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-30T04:33:21.267Z",
+        "updatedAt": "2025-12-30T04:33:21.267Z"
+      }
+    ],
+    "products": [
+      {
+        "id": 420,
+        "name": "MS-CIT Course",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mscit.mkcl.org/",
+        "logoUrl": "/images/logos/ms_cit.jpg",
+        "createdAt": "2025-12-26T10:17:33.377Z",
+        "updatedAt": "2025-12-26T10:17:33.377Z"
+      },
+      {
+        "id": 421,
+        "name": "KLiC Courses",
+        "description": "Innovative solution by MKCL",
+        "url": "https://klic.mkcl.org/",
+        "logoUrl": "/images/logos/klic_courses.jpg",
+        "createdAt": "2025-12-26T10:17:33.704Z",
+        "updatedAt": "2025-12-26T10:17:33.704Z"
+      },
+      {
+        "id": 422,
+        "name": "MS-ACIT IT For Teachers Course",
+        "description": "Innovative solution by MKCL",
+        "url": "https://msacit.mkcl.org/",
+        "logoUrl": "/images/logos/ms_acit.jpg",
+        "createdAt": "2025-12-26T10:17:34.007Z",
+        "updatedAt": "2025-12-26T10:17:34.007Z"
+      },
+      {
+        "id": 423,
+        "name": "MKCL Olympiad Movement",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mom.mkcl.org/",
+        "logoUrl": "/images/logos/mom.jpg",
+        "createdAt": "2025-12-26T10:17:34.320Z",
+        "updatedAt": "2025-12-26T10:17:34.320Z"
+      },
+      {
+        "id": 424,
+        "name": "MS-CIT Refresh Course",
+        "description": "Innovative solution by MKCL",
+        "url": "https://www.mkcl.org/mscit-refresh",
+        "logoUrl": "/images/logos/mscit_refresh.jpg",
+        "createdAt": "2025-12-26T10:17:34.630Z",
+        "updatedAt": "2025-12-26T10:17:34.630Z"
+      },
+      {
+        "id": 426,
+        "name": "Mastering",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mastering.mkcl.org/",
+        "logoUrl": "/images/logos/mastering.png",
+        "createdAt": "2025-12-26T10:17:35.251Z",
+        "updatedAt": "2025-12-26T10:17:35.251Z"
+      },
+      {
+        "id": 427,
+        "name": "Easy",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/easy.png",
+        "createdAt": "2025-12-26T10:17:35.555Z",
+        "updatedAt": "2025-12-26T10:17:35.555Z"
+      },
+      {
+        "id": 428,
+        "name": "Futurevedh",
+        "description": "Innovative solution by MKCL",
+        "url": "https://cit.mkcl.org/",
+        "logoUrl": "/images/logos/futurevedh.jpg",
+        "createdAt": "2025-12-26T10:17:35.862Z",
+        "updatedAt": "2025-12-26T10:17:35.862Z"
+      },
+      {
+        "id": 430,
+        "name": "RecruitLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://recruitlive.mkcl.org/",
+        "logoUrl": "/images/logos/recruitlive.png",
+        "createdAt": "2025-12-26T10:17:36.466Z",
+        "updatedAt": "2025-12-26T10:17:36.466Z"
+      },
+      {
+        "id": 431,
+        "name": "RecruitLive (Centralised Portal)",
+        "description": "Innovative solution by MKCL",
+        "url": "https://recruitlive.mkcl.org/",
+        "logoUrl": "/images/logos/recruitlive.png",
+        "createdAt": "2025-12-26T10:17:36.763Z",
+        "updatedAt": "2025-12-26T10:17:36.763Z"
+      },
+      {
+        "id": 433,
+        "name": "TenderLive",
+        "description": "Innovative solution by MKCL",
+        "url": "http://mkclnew.sets.co.in",
+        "logoUrl": "/images/logos/tenderlive.jpg",
+        "createdAt": "2025-12-26T10:17:37.354Z",
+        "updatedAt": "2025-12-26T10:17:37.354Z"
+      },
+      {
+        "id": 434,
+        "name": "LegisLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://legislive.mkcl.org/",
+        "logoUrl": "/images/logos/legislive.png",
+        "createdAt": "2025-12-26T10:17:37.661Z",
+        "updatedAt": "2025-12-26T10:17:37.661Z"
+      },
+      {
+        "id": 435,
+        "name": "VanMitra",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mpvanmitra.mkcl.org",
+        "logoUrl": "/images/logos/vanmitra.png",
+        "createdAt": "2025-12-26T10:17:37.965Z",
+        "updatedAt": "2025-12-26T10:17:37.965Z"
+      },
+      {
+        "id": 436,
+        "name": "Digitalisation",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/default.jpg",
+        "createdAt": "2025-12-26T10:17:38.253Z",
+        "updatedAt": "2025-12-26T10:17:38.253Z"
+      },
+      {
+        "id": 437,
+        "name": "DEEP",
+        "description": "Innovative solution by MKCL",
+        "url": "https://deep.mkcl.org/",
+        "logoUrl": "/images/logos/deep.png",
+        "createdAt": "2025-12-26T10:17:38.550Z",
+        "updatedAt": "2025-12-26T10:17:38.550Z"
+      },
+      {
+        "id": 438,
+        "name": "DEEP (Duplicate)",
+        "description": "Innovative solution by MKCL",
+        "url": "https://deep.mkcl.org/",
+        "logoUrl": "/images/logos/deep.png",
+        "createdAt": "2025-12-26T10:17:38.856Z",
+        "updatedAt": "2025-12-26T10:17:38.856Z"
+      },
+      {
+        "id": 439,
+        "name": "SDMMS",
+        "description": "Innovative solution by MKCL",
+        "url": "https://skilldevelopment.mkcl.org/",
+        "logoUrl": "/images/logos/sdmms.jpg",
+        "createdAt": "2025-12-26T10:17:39.167Z",
+        "updatedAt": "2025-12-26T10:17:39.167Z"
+      },
+      {
+        "id": 440,
+        "name": "iLike",
+        "description": "Innovative solution by MKCL",
+        "url": "https://ilike.mkcl.org/",
+        "logoUrl": "/images/logos/ilike_brand.png",
+        "createdAt": "2025-12-26T10:17:39.456Z",
+        "updatedAt": "2025-12-26T10:17:39.456Z"
+      },
+      {
+        "id": 441,
+        "name": "ExamLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://examlive.org/",
+        "logoUrl": "/images/logos/examlive.jpg",
+        "createdAt": "2025-12-26T10:17:39.762Z",
+        "updatedAt": "2025-12-26T10:17:39.762Z"
+      },
+      {
+        "id": 442,
+        "name": "MKCL’s Tilimili for Students",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/tilimili.jpg",
+        "createdAt": "2025-12-26T10:17:40.054Z",
+        "updatedAt": "2025-12-26T10:17:40.054Z"
+      },
+      {
+        "id": 443,
+        "name": "MKCL’s Tilimili for Teachers",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/tilimili.jpg",
+        "createdAt": "2025-12-26T10:17:40.345Z",
+        "updatedAt": "2025-12-26T10:17:40.345Z"
+      },
+      {
+        "id": 445,
+        "name": "Vikasghar",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/default.jpg",
+        "createdAt": "2025-12-26T10:17:40.934Z",
+        "updatedAt": "2025-12-26T10:17:40.934Z"
+      },
+      {
+        "id": 447,
+        "name": "iLike Courses",
+        "description": "Innovative solution by MKCL",
+        "url": "https://ilike.mkcl.org/",
+        "logoUrl": "/images/logos/ilike.png",
+        "createdAt": "2025-12-26T10:17:41.532Z",
+        "updatedAt": "2025-12-26T10:17:41.532Z"
+      },
+      {
+        "id": 448,
+        "name": "Digital University",
+        "description": "Innovative solution by MKCL",
+        "url": "https://digitalcollege.mkcl.org/",
+        "logoUrl": "/images/logos/digital_university.jpg",
+        "createdAt": "2025-12-26T10:17:41.832Z",
+        "updatedAt": "2025-12-26T10:17:41.832Z"
+      },
+      {
+        "id": 449,
+        "name": "CampusLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://campuslive.co.in/",
+        "logoUrl": "/images/logos/campuslive.png",
+        "createdAt": "2025-12-26T10:17:42.124Z",
+        "updatedAt": "2025-12-26T10:17:42.124Z"
+      },
+      {
+        "id": 450,
+        "name": "LearnLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://learnlive.mkcl.org/",
+        "logoUrl": "/images/logos/learnlive.png",
+        "createdAt": "2025-12-26T10:17:42.411Z",
+        "updatedAt": "2025-12-26T10:17:42.411Z"
+      },
+      {
+        "id": 451,
+        "name": "Work-based Degree Programs",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org/work-based-degree",
+        "logoUrl": "/images/logos/work_based.jpg",
+        "createdAt": "2025-12-26T10:17:42.711Z",
+        "updatedAt": "2025-12-26T10:17:42.711Z"
+      },
+      {
+        "id": 444,
+        "name": "SSC and HSC AI based Practice tests",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/default.jpg",
+        "createdAt": "2025-12-26T10:17:40.638Z",
+        "updatedAt": "2025-12-26T10:55:53.029Z"
+      },
+      {
+        "id": 432,
+        "name": "AuctionLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org/e-governance/e-auction",
+        "logoUrl": "/images/logos/eauction.jpg",
+        "createdAt": "2025-12-26T10:17:37.063Z",
+        "updatedAt": "2025-12-26T11:17:39.624Z"
+      },
+      {
+        "id": 425,
+        "name": "CCTP Offerings",
+        "description": "Innovative solution by MKCL",
+        "url": "https://cctp.mkcl.org/",
+        "logoUrl": "/images/logos/cctp.png",
+        "createdAt": "2025-12-26T10:17:34.935Z",
+        "updatedAt": "2025-12-26T11:27:17.522Z"
+      }
+    ],
+    "documents": [
+      {
+        "id": 1,
+        "type": "Product website",
+        "name": "Product website",
+        "url": "https://ilike.mkcl.org/",
+        "productId": 447,
+        "uploadedBy": "amitr",
+        "downloadCount": 0,
+        "createdAt": "2025-12-30T07:23:35.483Z"
+      },
+      {
+        "id": 2,
+        "type": "Product Proposal",
+        "name": "MKCL's iLike Proposal.docx",
+        "url": "https://zob5t7ljpezwj4aw.public.blob.vercel-storage.com/cf5ab6dc-ca53-4623-a1f8-0fdf62e1f3f7-MKCL%27s%20iLike%20Proposal.docx",
+        "productId": 447,
+        "uploadedBy": "amitr",
+        "downloadCount": 0,
+        "createdAt": "2025-12-30T07:24:24.750Z"
+      }
+    ],
+    "assets": [
+      {
+        "key": "hero_bg",
+        "value": "/images/hero-bg.png"
+      },
+      {
+        "key": "header_logo",
+        "value": "/images/mkcl-official.png"
+      }
+    ],
+    "logs": [
+      {
+        "id": 1,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "2",
+        "details": "{\"username\":\"atulp\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T06:45:58.244Z"
+      },
+      {
+        "id": 2,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "4",
+        "details": "{\"username\":\"sonalik\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T11:35:44.802Z"
+      },
+      {
+        "id": 3,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "5",
+        "details": "{\"username\":\"anupamn\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T11:39:43.558Z"
+      },
+      {
+        "id": 4,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "6",
+        "details": "{\"username\":\"amitr\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T11:42:11.410Z"
+      },
+      {
+        "id": 5,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "7",
+        "details": "{\"username\":\"khaliquem\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T11:44:46.183Z"
+      },
+      {
+        "id": 6,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "8",
+        "details": "{\"username\":\"revatin\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T11:47:07.527Z"
+      },
+      {
+        "id": 7,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T15:45:46.210Z"
+      },
+      {
+        "id": 8,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T04:15:38.497Z"
+      },
+      {
+        "id": 9,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "9",
+        "details": "{\"username\":\"sameerp\",\"role\":\"SYSADMIN\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T04:33:21.331Z"
+      },
+      {
+        "id": 10,
+        "action": "LOGOUT",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T06:17:17.197Z"
+      },
+      {
+        "id": 11,
+        "action": "LOGOUT",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T06:17:17.226Z"
+      },
+      {
+        "id": 12,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "6",
+        "details": "{\"username\":\"amitr\"}",
+        "performedBy": "amitr",
+        "timestamp": "2025-12-30T07:22:27.828Z"
+      },
+      {
+        "id": 13,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "1",
+        "details": "{\"name\":\"Product website\",\"productId\":447}",
+        "performedBy": "amitr",
+        "timestamp": "2025-12-30T07:23:35.646Z"
+      },
+      {
+        "id": 14,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "2",
+        "details": "{\"name\":\"MKCL's iLike Proposal.docx\",\"productId\":447}",
+        "performedBy": "amitr",
+        "timestamp": "2025-12-30T07:24:24.877Z"
+      },
+      {
+        "id": 15,
+        "action": "LOGOUT",
+        "entity": "USER",
+        "entityId": "6",
+        "details": "{\"username\":\"amitr\"}",
+        "performedBy": "amitr",
+        "timestamp": "2025-12-30T07:25:05.691Z"
+      },
+      {
+        "id": 16,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:29:15.376Z"
+      },
+      {
+        "id": 17,
+        "action": "LOGOUT",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:30:38.139Z"
+      },
+      {
+        "id": 18,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:36:23.119Z"
+      },
+      {
+        "id": 19,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "446",
+        "details": "{\"name\":\"MKCL as a CSR Implementation Agency\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:37:09.510Z"
+      },
+      {
+        "id": 20,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "429",
+        "details": "{\"name\":\"Mastering Competitive Exams\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:37:21.247Z"
+      }
+    ]
+  }
+}

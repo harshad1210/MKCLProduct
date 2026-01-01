@@ -16,7 +16,7 @@ const currentUser = useCookie('user')
 // Pagination & Search State
 const searchQuery = ref('')
 const currentPage = ref(1)
-const itemsPerPage = 6
+const itemsPerPage = ref(5)
 
 // Filtering
 const filteredUsers = computed(() => {
@@ -30,11 +30,11 @@ const filteredUsers = computed(() => {
 })
 
 // Pagination Computed
-const totalPages = computed(() => Math.ceil(filteredUsers.value.length / itemsPerPage))
+const totalPages = computed(() => Math.ceil(filteredUsers.value.length / itemsPerPage.value))
 
 const paginatedUsers = computed(() => {
-    const start = (currentPage.value - 1) * itemsPerPage
-    const end = start + itemsPerPage
+    const start = (currentPage.value - 1) * itemsPerPage.value
+    const end = start + itemsPerPage.value
     return filteredUsers.value.slice(start, end)
 })
 
@@ -42,8 +42,8 @@ const paginatedUsers = computed(() => {
 const nextPage = () => { if (currentPage.value < totalPages.value) currentPage.value++ }
 const prevPage = () => { if (currentPage.value > 1) currentPage.value-- }
 
-// Reset page on search
-watch(searchQuery, () => { currentPage.value = 1 })
+// Reset page on search or page size change
+watch([searchQuery, itemsPerPage], () => { currentPage.value = 1 })
 
 // Fetch Users
 const fetchUsers = async () => {
@@ -213,7 +213,19 @@ onMounted(() => {
     </div>
 
     <!-- Pagination Controls -->
+    <!-- Pagination Controls -->
     <div class="pagination-controls" v-if="filteredUsers.length > 0">
+        <label class="page-size-label">
+            Rows: 
+            <select v-model="itemsPerPage" class="page-size-select">
+                <option :value="5">5</option>
+                <option :value="10">10</option>
+                <option :value="15">15</option>
+                <option :value="20">20</option>
+                <option :value="50">50</option>
+            </select>
+        </label>
+        
         <button class="page-btn" @click="prevPage" :disabled="currentPage === 1">Previous</button>
         <span class="page-info">Page {{ currentPage }} of {{ totalPages }}</span>
         <button class="page-btn" @click="nextPage" :disabled="currentPage === totalPages">Next</button>
@@ -453,6 +465,20 @@ td {
     font-size: 0.9rem;
     color: #475569;
     font-weight: 500;
+}
+
+.page-size-label {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-right: 1rem;
+}
+
+.page-size-select {
+    padding: 4px 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
 }
 
 .text-center { text-align: center; }

@@ -76,6 +76,7 @@ const handleLogout = async () => {
               <LogOut :size="18" />
             </button>
         </div>
+        <div class="version-info" style="font-size: 0.7rem; color: #94a3b8; text-align: center; margin-top: 8px;">v1.7.4 (Prod)</div>
       </div>
     </aside>
 

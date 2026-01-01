@@ -56,14 +56,14 @@ const filteredProducts = computed(() => {
 })
 
 // Pagination
-const itemsPerPage = 6
+const itemsPerPage = ref(5)
 const currentPage = ref(1)
 
-const totalPages = computed(() => Math.ceil(filteredProducts.value.length / itemsPerPage))
+const totalPages = computed(() => Math.ceil(filteredProducts.value.length / itemsPerPage.value))
 
 const paginatedProducts = computed(() => {
-    const start = (currentPage.value - 1) * itemsPerPage
-    const end = start + itemsPerPage
+    const start = (currentPage.value - 1) * itemsPerPage.value
+    const end = start + itemsPerPage.value
     return filteredProducts.value.slice(start, end)
 })
 
@@ -76,7 +76,7 @@ const prevPage = () => {
 }
 
 // Watch search to reset page
-watch(searchQuery, () => {
+watch([searchQuery, itemsPerPage], () => {
     currentPage.value = 1
 })
 
@@ -133,6 +133,64 @@ const confirmDelete = async (password) => {
       alert("Server error")
   }
 }
+// Reordering
+import { ArrowUp, ArrowDown, Save } from 'lucide-vue-next'
+
+const hasUnsavedChanges = ref(false)
+
+const moveUp = async (relativeIndex) => {
+    if(searchQuery.value) return 
+
+    const realIndex = (currentPage.value - 1) * itemsPerPage.value + relativeIndex
+
+    if (realIndex === 0) return
+    const items = [...products.value]
+    
+    // Swap
+    const temp = items[realIndex]
+    items[realIndex] = items[realIndex - 1]
+    items[realIndex - 1] = temp
+    
+    products.value = items
+    hasUnsavedChanges.value = true
+}
+
+const moveDown = async (relativeIndex) => {
+    if(searchQuery.value) return 
+
+    const realIndex = (currentPage.value - 1) * itemsPerPage.value + relativeIndex
+
+    if (realIndex === products.value.length - 1) return
+    const items = [...products.value]
+    
+    // Swap
+    const temp = items[realIndex]
+    items[realIndex] = items[realIndex + 1]
+    items[realIndex + 1] = temp
+    
+    products.value = items
+    hasUnsavedChanges.value = true
+}
+
+const saveReorder = async () => {
+    const payload = products.value.map((p, i) => ({
+        id: p.id,
+        displayOrder: i
+    }))
+
+    try {
+        await $fetch('/api/products/reorder', {
+            method: 'POST',
+            body: { items: payload, username: currentUser.value?.username }
+        })
+        hasUnsavedChanges.value = false
+        alert("Sequence saved!")
+    } catch (e) {
+        console.error("Reorder failed", e)
+        alert("Failed to save order")
+    }
+}
+
 </script>
 
 <template>
@@ -160,6 +218,10 @@ const confirmDelete = async (password) => {
       <button class="btn btn-primary" @click="openAddModal">
          <Plus size="20" /> Add New Product
       </button>
+      
+      <button v-if="hasUnsavedChanges" class="btn btn-warning" @click="saveReorder" title="Save new order">
+         <Save size="20" /> Save Sequence
+      </button>
     </div>
 
     <!-- Loading -->
@@ -170,7 +232,7 @@ const confirmDelete = async (password) => {
     <!-- Product Grid (Cards) -->
     <div v-else class="product-grid fade-in-up">
       <div 
-        v-for="product in paginatedProducts" 
+        v-for="(product, index) in paginatedProducts" 
         :key="product.id" 
         class="product-card-compact clickable-card"
         @click="handleCardClick(product.id)"
@@ -181,6 +243,14 @@ const confirmDelete = async (password) => {
         </div>
         
         <div class="card-actions-hover">
+             <button @click.stop="moveUp(index)" class="action-btn" title="Move Up" 
+                v-if="!searchQuery && ((currentPage - 1) * itemsPerPage + index) > 0">
+                <ArrowUp :size="16"/>
+             </button>
+             <button @click.stop="moveDown(index)" class="action-btn" title="Move Down" 
+                v-if="!searchQuery && ((currentPage - 1) * itemsPerPage + index) < products.length - 1">
+                <ArrowDown :size="16"/>
+             </button>
              <button @click.stop="openEditModal(product)" class="action-btn edit" title="Edit Product Info"><Edit2 :size="16"/></button>
              <button v-if="currentUser?.role === 'ADMIN'" @click.stop="initiateDelete(product)" class="action-btn delete" title="Delete"><Trash2 :size="16"/></button>
         </div>
@@ -192,6 +262,17 @@ const confirmDelete = async (password) => {
 
     <!-- Pagination Controls -->
     <div class="pagination-controls" v-if="filteredProducts.length > 0">
+        <label class="page-size-label">
+            Rows: 
+            <select v-model="itemsPerPage" class="page-size-select">
+                <option :value="5">5</option>
+                <option :value="10">10</option>
+                <option :value="15">15</option>
+                <option :value="20">20</option>
+                <option :value="50">50</option>
+            </select>
+        </label>
+
         <button class="page-btn" @click="prevPage" :disabled="currentPage === 1">Previous</button>
         <span class="page-info">Page {{ currentPage }} of {{ totalPages }}</span>
         <button class="page-btn" @click="nextPage" :disabled="currentPage === totalPages">Next</button>
@@ -427,5 +508,34 @@ const confirmDelete = async (password) => {
     color: #475569;
     font-weight: 500;
 }
+
+.page-size-label {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-right: 1rem;
+}
+
+.page-size-select {
+    padding: 4px 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn-warning {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-warning:hover { background-color: #d97706; }
 </style>
 ```

@@ -1,6 +1,7 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, watch } from 'vue'
 import { ArrowLeft, Upload, Trash2, Edit2, FileText, Download, Search } from 'lucide-vue-next'
+import { upload } from '@vercel/blob/client'
 import ProductFormModal from '@/components/ProductFormModal.vue'
 import DeleteConfirmationModal from '@/components/DeleteConfirmationModal.vue'
 
@@ -82,17 +83,44 @@ const uploadDocument = async () => {
         }
     }
 
+    if (newDoc.value.file) {
+        // Limit increased to 50MB (Vercel Blob Client Side supports up to 500MB, but we set safe limit)
+        const fileSizeMB = newDoc.value.file.size / 1024 / 1024
+        if (fileSizeMB > 50) {
+            return alert(`File is too large (${fileSizeMB.toFixed(2)} MB).\nMaximum allowed size is 50 MB.`)
+        }
+    }
+
     uploading.value = true
     try {
-        const formData = new FormData()
-        formData.append('type', newDoc.value.type)
-        if (newDoc.value.url) formData.append('url', newDoc.value.url)
-        if (newDoc.value.file) formData.append('documentFile', newDoc.value.file)
-        const name = newDoc.value.file ? newDoc.value.file.name : newDoc.value.type
-        formData.append('name', name)
-        formData.append('performedBy', currentUser.value?.username || 'unknown')
+        let finalUrl = newDoc.value.url
+        let finalName = newDoc.value.type
 
-        const res = await fetch(`/api/products/${productId}/documents`, { method: 'POST', body: formData })
+        // 1. Client-Side Upload (if file selected)
+        if (newDoc.value.file) {
+            finalName = newDoc.value.file.name
+            
+            const blob = await upload(newDoc.value.file.name, newDoc.value.file, {
+                access: 'public',
+                handleUploadUrl: '/api/upload/auth',
+            })
+            finalUrl = blob.url
+        }
+
+        // 2. Save Metadata to Backend
+        const payload = {
+            type: newDoc.value.type,
+            url: finalUrl,
+            name: finalName,
+            performedBy: currentUser.value?.username || 'unknown'
+        }
+
+        const res = await fetch(`/api/products/${productId}/documents`, { 
+            method: 'POST', 
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload) 
+        })
+
         if (res.ok) {
             const uploadedDoc = await res.json()
             alert("Uploaded successfully!")
@@ -110,14 +138,21 @@ const uploadDocument = async () => {
             // Re-fetch in background to ensure consistency
             fetchProduct()
         } else {
-            const err = await res.json()
-            alert(err.statusMessage || "Upload failed")
+            let errorMessage = "Upload failed"
+            try {
+                const err = await res.json()
+                errorMessage = err.statusMessage || errorMessage
+            } catch (jsonErr) {
+                console.error("Failed to parse error JSON:", jsonErr)
+                const text = await res.text().catch(() => '')
+                errorMessage = `Upload failed (Status ${res.status}): ${text || res.statusText || 'Unknown Server Error'}`
+            }
+            alert(errorMessage)
         }
     } catch(e) { 
         console.error(e)
         alert("Upload error: " + e.message)
-    }
-    finally { uploading.value = false }
+    } finally { uploading.value = false }
 }
 
 // Delete Logic

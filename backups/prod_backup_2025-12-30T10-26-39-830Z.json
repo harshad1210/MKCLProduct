@@ -1,0 +1,942 @@
+{
+  "timestamp": "2025-12-30T10-26-39-830Z",
+  "counts": {
+    "users": 4,
+    "products": 34,
+    "documents": 16,
+    "assets": 2,
+    "logs": 40
+  },
+  "data": {
+    "users": [
+      {
+        "id": 1,
+        "employeeName": "Harshad Tidake",
+        "mobileNumber": "9209039100",
+        "email": "harshadt@mkcl.org",
+        "username": "admin",
+        "password": "password123",
+        "role": "ADMIN",
+        "updatedBy": "system",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.423Z",
+        "updatedAt": "2025-12-27T08:27:48.423Z"
+      },
+      {
+        "id": 2,
+        "employeeName": "Maahi Tidake",
+        "mobileNumber": "9850507848",
+        "email": "maahihtidake@gmail.com",
+        "username": "maahit",
+        "password": "#cEFsJP6AaWx",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-28T05:09:55.402Z",
+        "updatedAt": "2025-12-28T05:09:55.402Z"
+      },
+      {
+        "id": 3,
+        "employeeName": "Vaani Tidake",
+        "mobileNumber": "9850507838",
+        "email": "vaanihtidake@gmail.com",
+        "username": "vaanit",
+        "password": "8A$D5rYUDmw5",
+        "role": "SYSADMIN",
+        "updatedBy": "admin",
+        "isActive": true,
+        "createdAt": "2025-12-29T03:55:44.627Z",
+        "updatedAt": "2025-12-29T03:55:44.627Z"
+      },
+      {
+        "id": 4,
+        "employeeName": "Emp EMP",
+        "mobileNumber": "9209039100",
+        "email": "test@gmail.com",
+        "username": "Tester",
+        "password": "Ko0lm@il",
+        "role": "SPC",
+        "updatedBy": "admin",
+        "isActive": false,
+        "createdAt": "2025-12-29T04:05:32.634Z",
+        "updatedAt": "2025-12-29T06:52:27.053Z"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "MS-CIT Course",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mscit.mkcl.org/",
+        "logoUrl": "/images/logos/ms_cit.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.206Z",
+        "updatedAt": "2025-12-27T08:27:48.206Z"
+      },
+      {
+        "id": 2,
+        "name": "KLiC Courses",
+        "description": "Innovative solution by MKCL",
+        "url": "https://klic.mkcl.org/",
+        "logoUrl": "/images/logos/klic_courses.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.216Z",
+        "updatedAt": "2025-12-27T08:27:48.216Z"
+      },
+      {
+        "id": 3,
+        "name": "MS-ACIT IT For Teachers Course",
+        "description": "Innovative solution by MKCL",
+        "url": "https://msacit.mkcl.org/",
+        "logoUrl": "/images/logos/ms_acit.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.226Z",
+        "updatedAt": "2025-12-27T08:27:48.226Z"
+      },
+      {
+        "id": 4,
+        "name": "MKCL Olympiad Movement",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mom.mkcl.org/",
+        "logoUrl": "/images/logos/mom.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.234Z",
+        "updatedAt": "2025-12-27T08:27:48.234Z"
+      },
+      {
+        "id": 5,
+        "name": "MS-CIT Refresh Course",
+        "description": "Innovative solution by MKCL",
+        "url": "https://www.mkcl.org/mscit-refresh",
+        "logoUrl": "/images/logos/mscit_refresh.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.240Z",
+        "updatedAt": "2025-12-27T08:27:48.240Z"
+      },
+      {
+        "id": 6,
+        "name": "CCTP Offerings",
+        "description": "Innovative solution by MKCL",
+        "url": "https://cctp.mkcl.org/",
+        "logoUrl": "/images/logos/cctp.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.247Z",
+        "updatedAt": "2025-12-27T08:27:48.247Z"
+      },
+      {
+        "id": 7,
+        "name": "Mastering",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mastering.mkcl.org/",
+        "logoUrl": "/images/logos/mastering.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.254Z",
+        "updatedAt": "2025-12-27T08:27:48.254Z"
+      },
+      {
+        "id": 8,
+        "name": "Easy",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/easy.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.261Z",
+        "updatedAt": "2025-12-27T08:27:48.261Z"
+      },
+      {
+        "id": 9,
+        "name": "Futurevedh",
+        "description": "Innovative solution by MKCL",
+        "url": "https://cit.mkcl.org/",
+        "logoUrl": "/images/logos/futurevedh.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.267Z",
+        "updatedAt": "2025-12-27T08:27:48.267Z"
+      },
+      {
+        "id": 10,
+        "name": "Mastering Competitive Exams",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mastering.mkcl.org/",
+        "logoUrl": "/images/logos/mastering.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.275Z",
+        "updatedAt": "2025-12-27T08:27:48.275Z"
+      },
+      {
+        "id": 11,
+        "name": "RecruitLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://recruitlive.mkcl.org/",
+        "logoUrl": "/images/logos/recruitlive.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.282Z",
+        "updatedAt": "2025-12-27T08:27:48.282Z"
+      },
+      {
+        "id": 12,
+        "name": "RecruitLive (Centralised Portal)",
+        "description": "Innovative solution by MKCL",
+        "url": "https://recruitlive.mkcl.org/",
+        "logoUrl": "/images/logos/recruitlive.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.288Z",
+        "updatedAt": "2025-12-27T08:27:48.288Z"
+      },
+      {
+        "id": 13,
+        "name": "AuctionLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org/e-governance/e-auction",
+        "logoUrl": "/images/logos/eauction.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.294Z",
+        "updatedAt": "2025-12-27T08:27:48.294Z"
+      },
+      {
+        "id": 14,
+        "name": "TenderLive",
+        "description": "Innovative solution by MKCL",
+        "url": "http://mkclnew.sets.co.in",
+        "logoUrl": "/images/logos/tenderlive.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.300Z",
+        "updatedAt": "2025-12-27T08:27:48.300Z"
+      },
+      {
+        "id": 15,
+        "name": "LegisLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://legislive.mkcl.org/",
+        "logoUrl": "/images/logos/legislive.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.307Z",
+        "updatedAt": "2025-12-27T08:27:48.307Z"
+      },
+      {
+        "id": 16,
+        "name": "VanMitra",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mpvanmitra.mkcl.org",
+        "logoUrl": "/images/logos/vanmitra.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.314Z",
+        "updatedAt": "2025-12-27T08:27:48.314Z"
+      },
+      {
+        "id": 17,
+        "name": "Digitalisation",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/default.jpg",
+        "isActive": false,
+        "createdAt": "2025-12-27T08:27:48.321Z",
+        "updatedAt": "2025-12-30T10:09:21.021Z"
+      },
+      {
+        "id": 18,
+        "name": "DEEP",
+        "description": "Innovative solution by MKCL",
+        "url": "https://deep.mkcl.org/",
+        "logoUrl": "/images/logos/deep.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.327Z",
+        "updatedAt": "2025-12-27T08:27:48.327Z"
+      },
+      {
+        "id": 19,
+        "name": "DEEP (Duplicate)",
+        "description": "Innovative solution by MKCL",
+        "url": "https://deep.mkcl.org/",
+        "logoUrl": "/images/logos/deep.png",
+        "isActive": false,
+        "createdAt": "2025-12-27T08:27:48.333Z",
+        "updatedAt": "2025-12-30T10:09:16.051Z"
+      },
+      {
+        "id": 20,
+        "name": "SDMMS",
+        "description": "Innovative solution by MKCL",
+        "url": "https://skilldevelopment.mkcl.org/",
+        "logoUrl": "/images/logos/sdmms.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.339Z",
+        "updatedAt": "2025-12-27T08:27:48.339Z"
+      },
+      {
+        "id": 21,
+        "name": "iLike",
+        "description": "Innovative solution by MKCL",
+        "url": "https://ilike.mkcl.org/",
+        "logoUrl": "/images/logos/ilike_brand.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.345Z",
+        "updatedAt": "2025-12-27T08:27:48.345Z"
+      },
+      {
+        "id": 22,
+        "name": "ExamLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://examlive.org/",
+        "logoUrl": "/images/logos/examlive.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.352Z",
+        "updatedAt": "2025-12-27T08:27:48.352Z"
+      },
+      {
+        "id": 23,
+        "name": "MKCL’s Tilimili for Students",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/tilimili.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.359Z",
+        "updatedAt": "2025-12-27T08:27:48.359Z"
+      },
+      {
+        "id": 24,
+        "name": "MKCL’s Tilimili for Teachers",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/tilimili.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.364Z",
+        "updatedAt": "2025-12-27T08:27:48.364Z"
+      },
+      {
+        "id": 25,
+        "name": "SSC and HSC AI based Practice tests",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/default.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.370Z",
+        "updatedAt": "2025-12-27T08:27:48.370Z"
+      },
+      {
+        "id": 26,
+        "name": "Vikasghar",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org",
+        "logoUrl": "/images/logos/default.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.376Z",
+        "updatedAt": "2025-12-27T08:27:48.376Z"
+      },
+      {
+        "id": 28,
+        "name": "iLike Courses",
+        "description": "Innovative solution by MKCL",
+        "url": "https://ilike.mkcl.org/",
+        "logoUrl": "/images/logos/ilike.png",
+        "isActive": false,
+        "createdAt": "2025-12-27T08:27:48.388Z",
+        "updatedAt": "2025-12-30T10:12:04.987Z"
+      },
+      {
+        "id": 29,
+        "name": "Digital University",
+        "description": "Innovative solution by MKCL",
+        "url": "https://digitalcollege.mkcl.org/",
+        "logoUrl": "/images/logos/digital_university.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.394Z",
+        "updatedAt": "2025-12-27T08:27:48.394Z"
+      },
+      {
+        "id": 30,
+        "name": "CampusLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://campuslive.co.in/",
+        "logoUrl": "/images/logos/campuslive.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.402Z",
+        "updatedAt": "2025-12-27T08:27:48.402Z"
+      },
+      {
+        "id": 31,
+        "name": "LearnLive",
+        "description": "Innovative solution by MKCL",
+        "url": "https://learnlive.mkcl.org/",
+        "logoUrl": "/images/logos/learnlive.png",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.409Z",
+        "updatedAt": "2025-12-27T08:27:48.409Z"
+      },
+      {
+        "id": 32,
+        "name": "Work-based Degree Programs",
+        "description": "Innovative solution by MKCL",
+        "url": "https://mkcl.org/work-based-degree",
+        "logoUrl": "/images/logos/work_based.jpg",
+        "isActive": true,
+        "createdAt": "2025-12-27T08:27:48.415Z",
+        "updatedAt": "2025-12-27T08:27:48.415Z"
+      },
+      {
+        "id": 33,
+        "name": "Testing",
+        "description": "Testing",
+        "url": "www.mkcl.org",
+        "logoUrl": "/images/logos/292f630d-1367-409b-aa33-4005a3ce2dea-AI-ML-Basics_KLiC.jpg",
+        "isActive": false,
+        "createdAt": "2025-12-28T05:40:51.481Z",
+        "updatedAt": "2025-12-30T10:12:15.217Z"
+      },
+      {
+        "id": 34,
+        "name": "test1",
+        "description": "test",
+        "url": "www.mkcl.org",
+        "logoUrl": "/images/logos/b231d580-14e7-490e-8be6-8e3a794f5c56-Advanced Excel_KLiC.jpg",
+        "isActive": false,
+        "createdAt": "2025-12-28T05:41:53.899Z",
+        "updatedAt": "2025-12-30T10:07:37.074Z"
+      },
+      {
+        "id": 35,
+        "name": "Test",
+        "description": "Test",
+        "url": "www.mkcl.org",
+        "logoUrl": "/images/logos/d05a66be-c8be-4399-80bb-f18d871a882a-AI-ML-Basics_KLiC.jpg",
+        "isActive": false,
+        "createdAt": "2025-12-28T05:45:04.227Z",
+        "updatedAt": "2025-12-30T10:07:01.147Z"
+      }
+    ],
+    "documents": [
+      {
+        "id": 1,
+        "type": "Product Presentation",
+        "name": "3D Modelling_KLiC.jpg",
+        "url": "/documents/d6a05604-8d48-4592-a515-ac93dcb9258c-3D Modelling_KLiC.jpg",
+        "productId": 33,
+        "uploadedBy": "Admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T05:45:48.703Z"
+      },
+      {
+        "id": 2,
+        "type": "Draft Agreement",
+        "name": "Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "url": "/documents/23aa1df1-6e48-4234-b53e-f813c5029643-Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "productId": 33,
+        "uploadedBy": "Admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T05:46:18.747Z"
+      },
+      {
+        "id": 3,
+        "type": "Draft Agreement",
+        "name": "Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "url": "/documents/9c06fd4c-0ed0-4b8b-8098-7ffe032b4dd2-Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "productId": 33,
+        "uploadedBy": "Admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T05:49:06.938Z"
+      },
+      {
+        "id": 4,
+        "type": "Draft Agreement",
+        "name": "Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "url": "/documents/f7f94f90-80af-4a25-83ea-0a2117afef0f-Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "productId": 35,
+        "uploadedBy": "Admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T05:49:52.093Z"
+      },
+      {
+        "id": 5,
+        "type": "Product Proposal",
+        "name": "MKCL ai website.docx",
+        "url": "/documents/9ef9b6a0-2bc4-45dc-835b-7328c656494c-MKCL ai website.docx",
+        "productId": 35,
+        "uploadedBy": "Admin",
+        "downloadCount": 1,
+        "createdAt": "2025-12-28T05:55:02.569Z"
+      },
+      {
+        "id": 6,
+        "type": "Product Presentation",
+        "name": "Harshad.png",
+        "url": "/documents/7c077446-719b-4ba0-a977-0353253519a2-Harshad.png",
+        "productId": 35,
+        "uploadedBy": "Admin",
+        "downloadCount": 1,
+        "createdAt": "2025-12-28T05:58:13.760Z"
+      },
+      {
+        "id": 7,
+        "type": "Product Presentation",
+        "name": "Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "url": "/documents/8ab8d4e9-392f-4680-b7b2-4d7ed35d693e-Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx",
+        "productId": 35,
+        "uploadedBy": "Admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T06:00:45.641Z"
+      },
+      {
+        "id": 8,
+        "type": "Product Presentation",
+        "name": "Product Presentation pages.docx",
+        "url": "/documents/ee2f0a46-ff3d-485a-b6b9-5e1dc4b4c227-Product Presentation pages.docx",
+        "productId": 35,
+        "uploadedBy": "maahit",
+        "downloadCount": 1,
+        "createdAt": "2025-12-28T06:48:14.885Z"
+      },
+      {
+        "id": 9,
+        "type": "Product Presentation",
+        "name": "UI.xlsx",
+        "url": "/documents/596d4f11-f292-461f-87c7-5029e941f49a-UI.xlsx",
+        "productId": 35,
+        "uploadedBy": "maahit",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T06:51:59.029Z"
+      },
+      {
+        "id": 10,
+        "type": "Draft Agreement",
+        "name": "test.docx",
+        "url": "/documents/6de52b0a-b2cb-4b6b-a12e-f4abebe8a39a-test.docx",
+        "productId": 35,
+        "uploadedBy": "Admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T07:04:50.823Z"
+      },
+      {
+        "id": 11,
+        "type": "Draft Agreement",
+        "name": "AI AI.docx",
+        "url": "/documents/fb60b48b-ea7d-4bd2-8849-595c6749579a-AI AI.docx",
+        "productId": 35,
+        "uploadedBy": "maahit",
+        "downloadCount": 0,
+        "createdAt": "2025-12-28T07:08:47.730Z"
+      },
+      {
+        "id": 12,
+        "type": "Draft Agreement",
+        "name": "Study Material.docx",
+        "url": "/documents/9530fbbe-ebf9-428a-8e5f-4b4016b077a9-Study Material.docx",
+        "productId": 33,
+        "uploadedBy": "vaanit",
+        "downloadCount": 0,
+        "createdAt": "2025-12-29T03:58:44.889Z"
+      },
+      {
+        "id": 13,
+        "type": "Product Presentation",
+        "name": "AI AI.docx",
+        "url": "/documents/3a04d476-139f-4fe0-91e6-1550a0fffb0e-AI AI.docx",
+        "productId": 13,
+        "uploadedBy": "maahit",
+        "downloadCount": 2,
+        "createdAt": "2025-12-29T04:03:40.204Z"
+      },
+      {
+        "id": 14,
+        "type": "Product Presentation",
+        "name": "Harshad Profile Website.png",
+        "url": "/documents/4273dca6-239c-42b1-9c46-40dc80dd37ff-Harshad Profile Website.png",
+        "productId": 35,
+        "uploadedBy": "admin",
+        "downloadCount": 0,
+        "createdAt": "2025-12-29T07:04:06.818Z"
+      },
+      {
+        "id": 15,
+        "type": "Product Presentation",
+        "name": "AI-Agents-in-LD.pdf",
+        "url": "/documents/1baebbbd-6ee5-4733-a86a-2e689b67e3dc-AI-Agents-in-LD.pdf",
+        "productId": 35,
+        "uploadedBy": "vaanit",
+        "downloadCount": 0,
+        "createdAt": "2025-12-29T09:53:51.251Z"
+      },
+      {
+        "id": 16,
+        "type": "Product Presentation",
+        "name": "AI-Agents-in-LD.pdf",
+        "url": "/documents/d2902fe8-94aa-4f7c-90a2-5f0c85c1b681-AI-Agents-in-LD.pdf",
+        "productId": 35,
+        "uploadedBy": "vaanit",
+        "downloadCount": 0,
+        "createdAt": "2025-12-29T09:54:17.473Z"
+      }
+    ],
+    "assets": [
+      {
+        "key": "hero_bg",
+        "value": "/images/hero-bg.png"
+      },
+      {
+        "key": "header_logo",
+        "value": "/images/mkcl-official.png"
+      }
+    ],
+    "logs": [
+      {
+        "id": 1,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "2",
+        "details": "{\"username\":\"maahit\",\"role\":\"SPC\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-28T05:09:55.423Z"
+      },
+      {
+        "id": 2,
+        "action": "CREATE",
+        "entity": "PRODUCT",
+        "entityId": "33",
+        "details": "{\"name\":\"Testing\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-28T05:40:51.496Z"
+      },
+      {
+        "id": 3,
+        "action": "CREATE",
+        "entity": "PRODUCT",
+        "entityId": "34",
+        "details": "{\"name\":\"test1\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-28T05:41:53.914Z"
+      },
+      {
+        "id": 4,
+        "action": "CREATE",
+        "entity": "PRODUCT",
+        "entityId": "35",
+        "details": "{\"name\":\"Test\"}",
+        "performedBy": "maahit",
+        "timestamp": "2025-12-28T05:45:04.247Z"
+      },
+      {
+        "id": 5,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "1",
+        "details": "{\"name\":\"3D Modelling_KLiC.jpg\",\"productId\":33}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-28T05:45:48.716Z"
+      },
+      {
+        "id": 6,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "2",
+        "details": "{\"name\":\"Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx\",\"productId\":33}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-28T05:46:18.755Z"
+      },
+      {
+        "id": 7,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "3",
+        "details": "{\"name\":\"Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx\",\"productId\":33}",
+        "performedBy": "Admin",
+        "timestamp": "2025-12-28T05:49:06.953Z"
+      },
+      {
+        "id": 8,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "4",
+        "details": "{\"name\":\"Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx\",\"productId\":35}",
+        "performedBy": "Admin",
+        "timestamp": "2025-12-28T05:49:52.109Z"
+      },
+      {
+        "id": 9,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "5",
+        "details": "{\"name\":\"MKCL ai website.docx\",\"productId\":35}",
+        "performedBy": "Admin",
+        "timestamp": "2025-12-28T05:55:02.577Z"
+      },
+      {
+        "id": 10,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "6",
+        "details": "{\"name\":\"Harshad.png\",\"productId\":35}",
+        "performedBy": "Admin",
+        "timestamp": "2025-12-28T05:58:13.767Z"
+      },
+      {
+        "id": 11,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "7",
+        "details": "{\"name\":\"Internal Note for Sponsorship to Action for Agricultural Renewal in Maharashtra (AFARM).docx\",\"productId\":35}",
+        "performedBy": "Admin",
+        "timestamp": "2025-12-28T06:00:45.660Z"
+      },
+      {
+        "id": 12,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "8",
+        "details": "{\"name\":\"Product Presentation pages.docx\",\"productId\":35}",
+        "performedBy": "maahit",
+        "timestamp": "2025-12-28T06:48:14.900Z"
+      },
+      {
+        "id": 13,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "9",
+        "details": "{\"name\":\"UI.xlsx\",\"productId\":35}",
+        "performedBy": "maahit",
+        "timestamp": "2025-12-28T06:51:59.037Z"
+      },
+      {
+        "id": 14,
+        "action": "DOWNLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "5",
+        "details": "{\"name\":\"MKCL ai website.docx\",\"count\":1}",
+        "performedBy": "Guest",
+        "timestamp": "2025-12-28T07:04:01.652Z"
+      },
+      {
+        "id": 15,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "10",
+        "details": "{\"name\":\"test.docx\",\"productId\":35}",
+        "performedBy": "Admin",
+        "timestamp": "2025-12-28T07:04:50.830Z"
+      },
+      {
+        "id": 16,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "11",
+        "details": "{\"name\":\"AI AI.docx\",\"productId\":35}",
+        "performedBy": "maahit",
+        "timestamp": "2025-12-28T07:08:47.738Z"
+      },
+      {
+        "id": 17,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "3",
+        "details": "{\"username\":\"vaanit\",\"role\":\"SYSADMIN\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T03:55:44.636Z"
+      },
+      {
+        "id": 18,
+        "action": "DOWNLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "6",
+        "details": "{\"name\":\"Harshad.png\",\"count\":1}",
+        "performedBy": "Guest",
+        "timestamp": "2025-12-29T03:56:04.816Z"
+      },
+      {
+        "id": 19,
+        "action": "DOWNLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "8",
+        "details": "{\"name\":\"Product Presentation pages.docx\",\"count\":1}",
+        "performedBy": "Guest",
+        "timestamp": "2025-12-29T03:56:12.248Z"
+      },
+      {
+        "id": 20,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "12",
+        "details": "{\"name\":\"Study Material.docx\",\"productId\":33}",
+        "performedBy": "vaanit",
+        "timestamp": "2025-12-29T03:58:44.896Z"
+      },
+      {
+        "id": 21,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "13",
+        "details": "{\"name\":\"AI AI.docx\",\"productId\":13}",
+        "performedBy": "maahit",
+        "timestamp": "2025-12-29T04:03:40.210Z"
+      },
+      {
+        "id": 22,
+        "action": "CREATE",
+        "entity": "USER",
+        "entityId": "4",
+        "details": "{\"username\":\"Tester\",\"role\":\"SPC\"}",
+        "performedBy": "vaanit",
+        "timestamp": "2025-12-29T04:05:32.642Z"
+      },
+      {
+        "id": 23,
+        "action": "DOWNLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "13",
+        "details": "{\"name\":\"AI AI.docx\",\"count\":1}",
+        "performedBy": "Guest",
+        "timestamp": "2025-12-29T04:05:55.512Z"
+      },
+      {
+        "id": 24,
+        "action": "DOWNLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "13",
+        "details": "{\"name\":\"AI AI.docx\",\"count\":2}",
+        "performedBy": "Guest",
+        "timestamp": "2025-12-29T04:13:54.981Z"
+      },
+      {
+        "id": 25,
+        "action": "UPDATE",
+        "entity": "USER",
+        "entityId": "4",
+        "details": "{\"username\":\"Tester\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T04:15:04.113Z"
+      },
+      {
+        "id": 26,
+        "action": "UPDATE",
+        "entity": "USER",
+        "entityId": "4",
+        "details": "{\"username\":\"Tester\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T06:52:27.064Z"
+      },
+      {
+        "id": 27,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "14",
+        "details": "{\"name\":\"Harshad Profile Website.png\",\"productId\":35}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-29T07:04:06.825Z"
+      },
+      {
+        "id": 28,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "15",
+        "details": "{\"name\":\"AI-Agents-in-LD.pdf\",\"productId\":35}",
+        "performedBy": "vaanit",
+        "timestamp": "2025-12-29T09:53:51.261Z"
+      },
+      {
+        "id": 29,
+        "action": "UPLOAD",
+        "entity": "DOCUMENT",
+        "entityId": "16",
+        "details": "{\"name\":\"AI-Agents-in-LD.pdf\",\"productId\":35}",
+        "performedBy": "vaanit",
+        "timestamp": "2025-12-29T09:54:17.477Z"
+      },
+      {
+        "id": 30,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:41:31.009Z"
+      },
+      {
+        "id": 31,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "27",
+        "details": "{\"name\":\"MKCL as a CSR Implementation Agency\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T09:41:57.726Z"
+      },
+      {
+        "id": 32,
+        "action": "LOGIN",
+        "entity": "USER",
+        "entityId": "1",
+        "details": "{\"username\":\"admin\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:06:13.685Z"
+      },
+      {
+        "id": 33,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "35",
+        "details": "{\"name\":\"Test\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:06:38.998Z"
+      },
+      {
+        "id": 34,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "35",
+        "details": "{\"name\":\"Test\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:06:52.920Z"
+      },
+      {
+        "id": 35,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "35",
+        "details": "{\"name\":\"Test\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:07:01.161Z"
+      },
+      {
+        "id": 36,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "34",
+        "details": "{\"name\":\"test1\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:07:37.089Z"
+      },
+      {
+        "id": 37,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "19",
+        "details": "{\"name\":\"DEEP (Duplicate)\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:09:16.066Z"
+      },
+      {
+        "id": 38,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "17",
+        "details": "{\"name\":\"Digitalisation\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:09:21.035Z"
+      },
+      {
+        "id": 39,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "28",
+        "details": "{\"name\":\"iLike Courses\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:12:05.001Z"
+      },
+      {
+        "id": 40,
+        "action": "DELETE",
+        "entity": "PRODUCT",
+        "entityId": "33",
+        "details": "{\"name\":\"Testing\",\"type\":\"SOFT_DELETE\"}",
+        "performedBy": "admin",
+        "timestamp": "2025-12-30T10:12:15.231Z"
+      }
+    ]
+  }
+}

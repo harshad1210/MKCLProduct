@@ -7,7 +7,10 @@ export default defineEventHandler(async (event) => {
         const assetsList = await prisma.siteAsset.findMany()
         const products = await prisma.product.findMany({
             where: { isActive: true },
-            orderBy: { name: 'asc' }
+            orderBy: [
+                { displayOrder: 'asc' },
+                { name: 'asc' }
+            ]
         })
 
         // Convert assets array to object for easier access
