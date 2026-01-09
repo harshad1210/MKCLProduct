@@ -66,14 +66,15 @@ If you added new tables (like `AuditLog` or `User`), you must tell the live data
     *(Note: This sends only the structure, not your local test data).*
 3.  Wait for it to say `🚀 Your database is now in sync`.
 
-#### **Step 2: Upload the Code**
-1.  In the same Command Prompt, type:
+#### **Step 2: Upload the Code (Git Push)**
+1.  In the same Command Prompt, type these commands:
     ```bash
-    npx vercel --prod
+    git add .
+    git commit -m "Describe your changes here"
+    git push
     ```
-2.  It will perform a build process (you will see lines scrolling).
-3.  Wait until it says `Production: https://mkcl-product.vercel.app [copied to clipboard]`.
-4.  **Done!** The live site is updated.
+2.  **That's it!** Vercel will automatically detect the change, build the new version, and deploy it.
+3.  You can verify the deployment at `https://vercel.com/dashboard`.
 
 ---
 
@@ -83,7 +84,7 @@ The project is designed to keep **Local** and **Production** separate automatica
 
 | Feature | Local (Your PC) | Production (Live Website) |
 | :--- | :--- | :--- |
-| **Command** | `npm run dev` | `npx vercel --prod` |
+| **Command** | `npm run dev` | `git push` |
 | **Database** | `dev.db` (File on your disk) | Vercel Postgres (Cloud) |
 | **File Uploads** | `public/uploads` (Folder on disk) | Vercel Blob (Cloud Storage) |
 | **Login Data** | Separate (Test Users) | Separate (Real Admins) |
@@ -103,7 +104,7 @@ Save these commands somewhere handy:
     `npx prisma generate --schema=prisma/schema.local.prisma`
 
 3.  **Update Live Website Code**:
-    `npx vercel --prod`
+    `git push`
 
 4.  **Update Live Database Structure**:
     `npm run db:push:prod`

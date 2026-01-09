@@ -1,17 +1,19 @@
 <script setup>
 import { ExternalLink, ChevronRight } from 'lucide-vue-next'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const props = defineProps({
   product: {
     type: Object,
     required: true
   },
-  index: { // Accepting index to assign consistent color
+  index: { 
     type: Number,
     default: 0
   }
 })
+
+const isFlipped = ref(false)
 
 const pastelColors = [
   '#FFF5E6', // Light Orange (MKCL tint)
@@ -23,69 +25,127 @@ const pastelColors = [
 ]
 
 const cardColor = computed(() => {
-  // Use product ID or passed index to select color deterministically
   const idx = props.product.id ? props.product.id : props.index
   return pastelColors[idx % pastelColors.length]
+})
+
+const truncatedDescription = computed(() => {
+  const desc = props.product.description || ''
+  if (desc.length <= 108) return desc
+  return desc.substring(0, 108) + '...'
 })
 
 const openProduct = (url) => {
   if (!url) return
   
-  // Logic: Allow absolute URLs (http/https) OR internal paths (starting with /)
-  // Otherwise, assume it's a domain (e.g. www.google.com) and prepend https://
   let finalUrl = url
   if (!/^https?:\/\//i.test(url) && !url.startsWith('/')) {
       finalUrl = 'https://' + url
   }
   window.open(finalUrl, '_blank')
 }
+
+const toggleFlip = (e) => {
+  e.stopPropagation() // Prevent card click event
+  isFlipped.value = !isFlipped.value
+}
 </script>
 
 <template>
-  <div class="product-card" @click="openProduct(product.url)">
-    <div class="card-header" :style="{ background: cardColor }">
-      <img :src="product.logoUrl" :alt="product.name" class="product-logo" />
-      <div class="overlay">
-        <ExternalLink color="white" size="24" />
+  <div class="product-card" @mouseleave="isFlipped = false">
+    <div class="card-inner" :class="{ 'is-flipped': isFlipped }">
+      
+      <!-- FRONT SIDE -->
+      <div class="card-face card-front" @click="openProduct(product.url)">
+        <div class="card-header" :style="{ background: cardColor }">
+          <img :src="product.logoUrl" :alt="product.name" class="product-logo" />
+          <div class="overlay">
+            <ExternalLink color="white" size="24" />
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="content-top">
+            <h3>{{ product.name }}</h3>
+            <p>
+              {{ truncatedDescription }}
+              <span 
+                v-if="product.description && product.description.length > 108" 
+                class="read-more-link" 
+                @click="toggleFlip"
+              >
+                Read More
+              </span>
+            </p>
+          </div>
+          <div class="content-bottom">
+            <span class="learn-more">
+              Know More <ChevronRight size="16" class="arrow-icon"/>
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card-content">
-      <div class="content-top">
-        <!-- Badge Removed as per request -->
-        <h3>{{ product.name }}</h3>
-        <p>{{ product.description }}</p>
+
+      <!-- BACK SIDE -->
+      <div class="card-face card-back">
+        <div class="back-content">
+          <h3>{{ product.name }}</h3>
+          <div class="scrollable-desc">
+             <p>{{ product.description }}</p>
+          </div>
+          <button class="btn-flip-back" @click="isFlipped = false">Go Back</button>
+        </div>
       </div>
-      <div class="content-bottom">
-        <span class="learn-more">
-          Know More <ChevronRight size="16" class="arrow-icon"/>
-        </span>
-      </div>
+
     </div>
   </div>
 </template>
 
 <style scoped>
 .product-card {
-  background: white;
+  background: transparent;
+  width: 100%;
+  height: 420px; /* Fixed height to ensure uniform flip axis */
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  background: white;
   border: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  height: 100%;
-  cursor: pointer;
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }
 
-.product-card:hover {
-  transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+/* FRONT SPECIFIC */
+.card-front {
+  z-index: 2;
+}
+
+.product-card:hover .card-inner {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   border-color: var(--mkcl-orange);
-  z-index: 10;
 }
 
 .card-header {
@@ -93,15 +153,10 @@ const openProduct = (url) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: none;
   transition: background 0.5s ease;
   position: relative;
   height: 180px;
-  overflow: hidden;
-}
-
-.product-card:hover .card-header {
-  filter: brightness(0.98);
+  flex-shrink: 0;
 }
 
 .product-logo {
@@ -115,24 +170,6 @@ const openProduct = (url) => {
 
 .product-card:hover .product-logo {
   transform: scale(1.15) translateZ(20px);
-}
-
-/* Background Shine Effect */
-.card-header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
-  transform: skewX(-25deg);
-  transition: left 0.7s;
-  z-index: 1;
-}
-
-.product-card:hover .card-header::after {
-  left: 125%;
 }
 
 .overlay {
@@ -160,33 +197,14 @@ const openProduct = (url) => {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff;
-  transition: transform 0.5s;
-}
-
-.product-card:hover .card-content {
-  transform: translateZ(10px);
-}
-
-.category-badge {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--mkcl-blue);
-  background: var(--mkcl-light-blue);
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-bottom: 12px;
-  display: inline-block;
-  font-weight: 600;
+  text-align: left;
 }
 
 h3 {
   margin: 0.5rem 0 0.8rem 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #2c3e50;
-  letter-spacing: -0.5px;
   transition: color 0.3s;
 }
 
@@ -197,41 +215,83 @@ h3 {
 p {
   color: var(--text-secondary);
   font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
+.read-more-link {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 4px;
+  text-decoration: underline;
+}
+
+.read-more-link:hover {
+  color: darkred;
+}
 
 .learn-more {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
-  background-color: transparent;
   color: var(--mkcl-orange);
   font-weight: 600;
   font-size: 0.9rem;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: 1px solid var(--mkcl-orange);
-  border-radius: 50px; /* Pill shape */
-  text-decoration: none;
-  transition: all 0.3s ease;
+  border-radius: 50px;
   margin-top: auto;
   width: fit-content;
+  transition: all 0.3s ease;
 }
 
 .product-card:hover .learn-more {
   background-color: var(--mkcl-orange);
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(243, 112, 33, 0.3); /* Orange shadow */
 }
 
-.arrow-icon {
-  transition: transform 0.3s ease;
+/* BACK SPECIFIC */
+.card-back {
+  transform: rotateY(180deg);
+  padding: 2rem;
+  text-align: left;
+  background: #fff; /* Ensure generic white background */
 }
 
-.product-card:hover .arrow-icon {
-  transform: translateX(4px);
+.back-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.scrollable-desc {
+  flex: 1;
+  overflow-y: auto;
+  margin: 1rem 0;
+  padding-right: 5px;
+}
+
+/* Scrollbar styling for back content */
+.scrollable-desc::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollable-desc::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.btn-flip-back {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+.btn-flip-back:hover {
+  background: #f5f5f5;
 }
 </style>
