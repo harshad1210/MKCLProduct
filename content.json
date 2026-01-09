@@ -1,0 +1,285 @@
+{
+  "generatedAt": "2026-01-09T06:33:47.954Z",
+  "note": "This file is a static export of the MKCL Product database.",
+  "assets": {
+    "hero_bg": "/images/hero-bg.png",
+    "header_logo": "/images/mkcl-official.png"
+  },
+  "products": [
+    {
+      "id": 420,
+      "name": "MS-CIT Course",
+      "description": "Welcome to MS-CIT MS-CIT is an Information Technology (IT) literacy course started by MKCL in 2001. It is the most popular IT literacy course in Maharashtra, helping learners develop essential digital skills. In the 21st century, most new actionable knowledge is being digitally created, stored, presented, shared, and managed. With the rise of Artificial Intelligence (AI), technology has become an integral part of personal, professional, and social life. Recognizing this shift, MS-CIT now includes AI tools in its curriculum, empowering learners with AI-powered productivity, study, job-readiness, and business tools. By integrating AI and digital literacy, MS-CIT ensures that learners stay future-ready, competitive, and adaptable in the ever-evolving digital world. I am a housewife. I wanted to learn computer so I joined the MS-CIT course after counseling in MS-CIT Centre. Now I help my children complete their projects using word and power point. I can search various images related to project on internet and can search topics related to science projects. I feel proud when I make gas bookings, electricity, mobile bill payment online without help. I am a college student and have been using computer since 5th std. but I was not aware of so many functions in computer. I only used computers for playing games only. Now, I can search project related data online, make presentations in seminars and prepare projects reports easily. I am a senior citizen. Previously, I used to think I don’t have any need for computer education but when a medical emergency came at my home and I couldn’t send a medical report by mail or WhatsApp to Doctor, I realized the warning alarm of computer literacy. I have completed MS-CIT course and now I am very happy with improvement in myself. Thanks to MS-CIT. I am B.com student. I did the KLiC Tally course to better job opportunities. I am really satisfied with the e-learning facility of this course MS-CIT in News Number of MS-CIT learners to reach 2+ ",
+      "url": "https://mscit.mkcl.org/",
+      "logoUrl": "/images/logos/ms_cit.jpg",
+      "isActive": true,
+      "displayOrder": 0,
+      "createdAt": "2025-12-26T10:17:33.377Z",
+      "updatedAt": "2026-01-09T05:47:01.633Z"
+    },
+    {
+      "id": 424,
+      "name": "MS-CIT Refresh Course",
+      "description": "All the learners (i.e School Students, College Students, Government and Semi-Government employees, Officers, Job seekers etc.) who have completed the MS-CIT Course in the past can easily learn the latest digital skills and update their IT knowledge through this course.",
+      "url": "https://www.mkcl.org/mscit-refresh",
+      "logoUrl": "/images/logos/mscit_refresh.jpg",
+      "isActive": true,
+      "displayOrder": 1,
+      "createdAt": "2025-12-26T10:17:34.630Z",
+      "updatedAt": "2026-01-09T05:47:04.140Z"
+    },
+    {
+      "id": 422,
+      "name": "MS-ACIT IT For Teachers Course",
+      "description": "The MS-ACIT (IT for Teachers) course equips teachers with skills to integrate AI tools into their teaching. It transforms school teachers into eSchool educators, ready for the digital age. To enable educators to identify, apply, analyze, create, manage, and evaluate digital tools and teaching practices for modern classrooms. Maharashtra Knowledge Corporation Limited (MKCL), is a Public Limited Company incorporated under the then Companies Act, 1956 on August 20, 2001. MKCL was promoted by the Department of Higher and Technical Education, Government of Maharashtra (GoM). On January 05, 2018, the governmental coordination of the Company's affairs was handed over from the Department of Higher and Technical Education to the General Administration Department (GAD), and thereunder, to the Directorate of Information Technology",
+      "url": "https://msacit.mkcl.org/",
+      "logoUrl": "/images/logos/ms_acit.jpg",
+      "isActive": true,
+      "displayOrder": 2,
+      "createdAt": "2025-12-26T10:17:34.007Z",
+      "updatedAt": "2026-01-09T05:47:05.043Z"
+    },
+    {
+      "id": 425,
+      "name": "CCTP Offerings",
+      "description": "Welcome to CCTP The Certificate of Computer Typing Proficiency (CCTP) is a new course offered by MKCL to build professional typing skills in English, Marathi, and Hindi languages with 30 or 40 words per minute speed. Through 50 structured online sessions in ERA, learners systematically develop speed, accuracy, and ergonomic typing habits using the Government-Approved Remington keyboard layout. After completing the course and successfully passing the Final Online Typing Exam conducted by MSBTE, learners will receive a Government Certificate of CCTP jointly certified by MSBTE and MKCL. Key Highlights: Government-Recognized Joint Certificate MSBTE + MKCL joint certification, giving formal and credible recognition to the learner’s typing skills. Multilingual Typing Proficiency Choice of English, Marathi, or Hindi with 30 or 40 WPM speed – aligned to real-world job requirements. Scientific, Practice-Based Learning 50 e-learning sessions in ERA with stepwise practice, speed-building drills, mock tests, and Remington layout as per government standards. Stronger Employability & Productivity Helps learners work faster, more accurately, and confidently in digital environments, opening better scopes in careers. Maharashtra Knowledge Corporation Limited (MKCL), is a Public Limited Company incorporated under the then Companies Act, 1956 on August 20, 2001. Links Home Locate Centers Contact Us MS-CIT Center List ICC Trade Tower, 'A' Wing, 5th Floor, Senapati Bapat Road, Shivajinagar, Pune 411 016, Maharashtra, India. Email : mkcl@mkcl.org Call Us : +91 20 4011 4500 / 501 Copyright &copy; 2026 Maharashtra Knowledge Corporation Ltd. All Rights Reserved.",
+      "url": "https://cctp.mkcl.org/",
+      "logoUrl": "/images/logos/cctp.png",
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2025-12-26T10:17:34.935Z",
+      "updatedAt": "2026-01-09T05:47:05.993Z"
+    },
+    {
+      "id": 426,
+      "name": "Mastering",
+      "description": "Mastering series can be explained in simple words as a “Test Series”. It has been launched by MKCL with a view to enable student to master competitive examinations by providing him with systematic practice and personalized corrective feedback.\r\n\r\nIn “Mastering series” we lay great amount of emphasis on types and schedule of tests. Hence the tests in the series are designed in such a way that if a student plans his/her studies around it then he/she can easily cover his/her complete syllabus more efficiently & effectively thereby optimizing the time as well.",
+      "url": "https://mastering.mkcl.org/",
+      "logoUrl": "/images/logos/mastering.png",
+      "isActive": true,
+      "displayOrder": 4,
+      "createdAt": "2025-12-26T10:17:35.251Z",
+      "updatedAt": "2026-01-09T06:12:50.674Z"
+    },
+    {
+      "id": 421,
+      "name": "KLiC Courses",
+      "description": "KLiC stands for Knowledge Lit Career. KLiC series of courses serve as a bridge from college to careers. MKCL, under its KLiC brand, offers employability skills development modules as KLiC Certificate Courses. KLiC Courses are of 30, 60, 90 and 120 hours. KLiC Courses of 120 Hours are Recognized and Certified by Yashwantrao Chavan Maharashtra Open University (YCMOU). The focus of KLiC Courses is on knowledge-based skills for career development in diverse areas of the services sector. KLiC Courses are available under 11 sectors and those are Back Office, Data Science, Digital Designing, Digital Creative Arts, Digital Freelancing, Financial Accounting, Front Office, IT Hardware - Networking and Cyber Security, Service Management, New Collar and Software Development. Copyright &copy; 2026 Maharashtra Knowledge Corporation Limited. All Rights Reserved.",
+      "url": "https://klic.mkcl.org/",
+      "logoUrl": "/images/logos/klic_courses.jpg",
+      "isActive": true,
+      "displayOrder": 5,
+      "createdAt": "2025-12-26T10:17:33.704Z",
+      "updatedAt": "2026-01-09T05:47:10.841Z"
+    },
+    {
+      "id": 440,
+      "name": "iLike",
+      "description": "MKCL is offering series of career-oriented courses and over the last two decades lakhs of students have benefited from them for entry into a variety of emerging local and global careers in knowledge-based economy. These courses are designed to respond to emerging technologies, markets, job-roles, and international certification standards. They attempt to imbibe job-role readiness, desired social behavior, self-confidence, and growth mindset necessary for college students to effectively enter the 21st century workspace either as employees or as entrepreneurs. MKCL has mapped these courses to develop students to take up specific industry roles in various sectors of economy. As a result, these courses form a bridge from college to careers. MKCL, as per National Credit Framework (NCrF) 2023, has creditized its courses at various Credit Levels and is offering hundreds of credits under its ‘iLike’ Brand which stands for “Incredible Learning Innovations for Knowledge Empowerment”. Maharashtra Knowledge Corporation Limited (MKCL) was promoted by the Department of Higher and Technical Education (H & TE), Government of Maharashtra (GoM), India and was incorporated under the Companies Act, 1956. In order to make the capabilities of MKCL available to all the Departments of Government of Maharashtra, governmental coordination of the affairs of the company has been handed over from January 05, 2018 to the General Administration Department (GAD) from Department of Higher & Technical Education. Subsequently, it was allocated to Directorate of Information Technology under GAD. Powered by Maharashtra Knowldege Corporation Ltd (MKCL) as Knowledge Partner and Solution Architect. Copyright © 2024. All rights reserved by MKCL.",
+      "url": "https://ilike.mkcl.org/",
+      "logoUrl": "/images/logos/ilike_brand.png",
+      "isActive": true,
+      "displayOrder": 6,
+      "createdAt": "2025-12-26T10:17:39.456Z",
+      "updatedAt": "2026-01-09T05:47:11.900Z"
+    },
+    {
+      "id": 448,
+      "name": "Digital University",
+      "description": "From Admission to Convocation & Beyond……\r\nStudent Life Cycle, College Life Cycle, University Management, E- Services, Analytics, Business Intelligence, Decision Support and many more. MKCL in co-creation with several renowned universities pan India, has come up with a revolutionary framework called Digital University. MKCL’s Digital University is India’s one of the biggest, oldest and most state-of-the-art only of its kind NEP 2020 compliant “integrated direct student facilitation framework”.",
+      "url": "https://www.mkcl.org/#/solutions/digital-university",
+      "logoUrl": "/images/logos/digital_university.jpg",
+      "isActive": true,
+      "displayOrder": 7,
+      "createdAt": "2025-12-26T10:17:41.832Z",
+      "updatedAt": "2026-01-09T06:15:08.855Z"
+    },
+    {
+      "id": 451,
+      "name": "Work-based Degree Programs",
+      "description": "BBA-SM gives an intensive exposure, expertise and experience to the students in real life work environments of industries. In this program Students are expected to perform at real life Workplace provided by the industry and study through eLearning.",
+      "url": "https://ignou.mkcl.org/work-based-learning-initiative",
+      "logoUrl": "/images/logos/work_based.jpg",
+      "isActive": true,
+      "displayOrder": 8,
+      "createdAt": "2025-12-26T10:17:42.711Z",
+      "updatedAt": "2026-01-09T05:47:13.393Z"
+    },
+    {
+      "id": 432,
+      "name": "AuctionLive",
+      "description": "AuctionLive is an innovative online platform designed to streamline the process of organizing and participating in auctions. It offers a comprehensive suite of features to manage every aspect of the auction lifecycle, from registration to final sale, ensuring a seamless experience for both organizers and bidders.",
+      "url": "https://www.mkcl.org/#/solutions/auctionlive",
+      "logoUrl": "https://zob5t7ljpezwj4aw.public.blob.vercel-storage.com/9160571d-3b50-4335-93df-81591698714d-auctionlive.webp",
+      "isActive": true,
+      "displayOrder": 9,
+      "createdAt": "2025-12-26T10:17:37.063Z",
+      "updatedAt": "2026-01-09T06:15:54.567Z"
+    },
+    {
+      "id": 449,
+      "name": "CampusLive",
+      "description": "MKCL’s CampusLive is a comprehensive software framework conceived, designed, developed and owned by MKCL for offering various adminitstrative and acedemic services to Higher Educational Institutions on Software-as-a-Service (SaaS) basis.",
+      "url": "https://www.mkcl.org/#/solutions/campuslive",
+      "logoUrl": "/images/logos/campuslive.png",
+      "isActive": true,
+      "displayOrder": 10,
+      "createdAt": "2025-12-26T10:17:42.124Z",
+      "updatedAt": "2026-01-09T06:16:14.663Z"
+    },
+    {
+      "id": 441,
+      "name": "ExamLive",
+      "description": "MKCL’ s most acclaimed framework for secured assessment and certification which provided turnkey solution for all assessment needs. Students, Teachers, Institutes and Corporates are best benefited by our products.",
+      "url": "https://examlive.org/",
+      "logoUrl": "https://zob5t7ljpezwj4aw.public.blob.vercel-storage.com/b05531f9-ffdb-4f42-b525-8a4efe146077-logo_exam-live.png",
+      "isActive": true,
+      "displayOrder": 11,
+      "createdAt": "2025-12-26T10:17:39.762Z",
+      "updatedAt": "2026-01-09T06:16:43.379Z"
+    },
+    {
+      "id": 450,
+      "name": "LearnLive",
+      "description": "MKCL’s LearnLive is a comprehensive software framework conceived, designed, developed and owned by MKCL for offering following services on Software-as-a-Service (SaaS) basis: Academic Lifecycle Management of Institute’s Programs, Courses, and Credits, Academic Lifecycle Management of Institute’s Colleges, Academic Lifecycle Management of Students and Academic Lifecycle Management of Teachers.",
+      "url": "https://learnlive.mkcl.org/",
+      "logoUrl": "/images/logos/learnlive.png",
+      "isActive": true,
+      "displayOrder": 12,
+      "createdAt": "2025-12-26T10:17:42.411Z",
+      "updatedAt": "2026-01-09T06:17:09.891Z"
+    },
+    {
+      "id": 434,
+      "name": "LegisLive",
+      "description": "LegisLive is a cutting-edge digital platform that automates and enhances legislative secretariat operations. Initially deployed at Maharashtra Vidhan Bhavan, it digitizes parliamentary procedures, including questions, motions, bills, and resolutions, significantly improving efficiency, transparency, and accessibility.",
+      "url": "https://mkcl.org/#/solutions/legislive",
+      "logoUrl": "/images/logos/legislive.png",
+      "isActive": true,
+      "displayOrder": 13,
+      "createdAt": "2025-12-26T10:17:37.661Z",
+      "updatedAt": "2026-01-09T06:17:34.204Z"
+    },
+    {
+      "id": 430,
+      "name": "RecruitLive",
+      "description": "RecruitLive is a web-based online recruitment platform developed by Maharashtra Knowledge Corporation Limited (MKCL) to modernise and streamline job application and selection processes for government departments, public institutions and other large employers. It is part of MKCL’s broader suite of e-governance products aimed at improving transparency, accessibility and efficiency in public sector workflows.",
+      "url": "https://recruitlive.mkcl.org/",
+      "logoUrl": "/images/logos/recruitlive.png",
+      "isActive": true,
+      "displayOrder": 14,
+      "createdAt": "2025-12-26T10:17:36.466Z",
+      "updatedAt": "2026-01-09T06:18:36.658Z"
+    },
+    {
+      "id": 433,
+      "name": "TenderLive",
+      "description": "MKCL Secured Electronic Tendering System (SeTS) is an end-to-end online tendering solution designed and devised to perform every activity in the tender cycle. SeTS ensures transparency, cost effectiveness, process efficiency and accuracy, and time gain throughout the procurement process.",
+      "url": "http://mkclnew.sets.co.in",
+      "logoUrl": "https://zob5t7ljpezwj4aw.public.blob.vercel-storage.com/e64c2a0b-39c9-4f26-b257-39cca1411cd8-logo-tl.png",
+      "isActive": true,
+      "displayOrder": 15,
+      "createdAt": "2025-12-26T10:17:37.354Z",
+      "updatedAt": "2026-01-09T05:47:18.434Z"
+    },
+    {
+      "id": 439,
+      "name": "SDMMS",
+      "description": "Supports various schemes undertaken at SDM like Domain Skilling, R-T-D (Recruit Train Deploy), RPL (Recognition Prior Learning), PMKVY category 1 and 4, SANKALP, Jal Jeevan Mission RPL, NSFDC etc. so this is highly configurable. A single platform bringing all stake holders like Candidate, TP, TC, Employer, Assessing Body and State Skill Development Mission officials at the same place. Implementation and compliance of NSDC and State guidelines like center size and lab requirements, batch minimum size requirements etc. becomes easy due to checks implemented in the portal. PFMS is a transaction based system to provide real time utilization of funds released from consolidated fund of India. Government has made use of Public Finance Management System (PFMS) for all Central Sector Schemes mandatory. Single fingerprint based online attendance system ensures that Candidate themselves are present in the class decreasing possibility of proxy attendance. Portal is SSL secured, CERT-In and STQC certified, ensuring that it is robust and can prevent external vulnerabilities and hacking attempts. Assam Skill Development Mission (ASDM) empanelled MKCL to implement its SDMMS framework for skill development activities in the state of Assam through an RFP. The agreement between ASDM and MKCL was signed in June 2018 and immediately MKCL implemented a customized version of its SDMMS framework with... BSDM empaneled MKCL as Knowledge Partner to implement its SDMMS framework for skill development activities in the state of Bihar through an RFP. The agreement between BSDM and MKCL was signed in July 2016 and immediately MKCL implemented a customized version of its SDMMS framework with for conductin... Haryana Skill Development Mission (HSDM) has been established in May 2015 by State Government with an aim to empower youth to take part in the economic and all around growth of HARYANA AND INDIA. The Mission is a single point of contact within the Government to formulate and steer skill devel",
+      "url": "https://skilldevelopment.mkcl.org/",
+      "logoUrl": "/images/logos/sdmms.jpg",
+      "isActive": true,
+      "displayOrder": 16,
+      "createdAt": "2025-12-26T10:17:39.167Z",
+      "updatedAt": "2026-01-09T05:47:19.522Z"
+    },
+    {
+      "id": 437,
+      "name": "DEEP",
+      "description": "The focus of DEEP Courses is on knowledge-based skills for career development in diverse areas of the services sector. There are 250 + DEEP Courses available under 12 sectors and those are Accounting, Back Office, Career Readiness, Designing, Digital Arts, Digital Freelancing, Hardware & Networking, Management, New Collar Jobs, and Programming. Maharashtra Knowledge Corporation Limited (MKCL) was promoted by the Department of Higher and Technical Education (H & TE), Government of Maharashtra (GoM), India and was incorporated under the Companies Act, 1956. In order to make the capabilities of MKCL available to all the Departments of Government of Maharashtra, governmental coordination of the affairs of the company has been handed over from January 05, 2018 to the General Administration Department (GAD) from Department of Higher & Technical Education. Subsequently, it was allocated to Directorate of Information Technology under GAD. Get In Touch DevOps - Seawoods, Mumbai Plot No. 30, Sector 42-A, Seawoods West,Nerul, Navi Mumbai 400 706 nationwide@mkcl.org 022- 43661672 RO - Patna, Bihar 301, 3rd Floor Apurva Radha complex, S K Puri Boring Road,Patna, Bihar, 800001 mkclbihar@mkcl.org +91 8956909559 RO - Jaipur, Rajasthan 4th Floor, 17 RHB, SAAVI SPACES, New Aatish Market, Shanthi Nagar, Mansarovar, Jaipur, Rajasthan 302019 nationwide@mkcl.org +91 8956944535 Copyright &copy; 2026 Maharashtra Knowledge Corporation Limited. All Rights Reserved.",
+      "url": "https://deep.mkcl.org/",
+      "logoUrl": "/images/logos/deep.png",
+      "isActive": true,
+      "displayOrder": 17,
+      "createdAt": "2025-12-26T10:17:38.550Z",
+      "updatedAt": "2026-01-09T05:47:21.874Z"
+    },
+    {
+      "id": 428,
+      "name": "Futurevedh",
+      "description": "Career Inclination Test is developed by subject experts from MKCL and IPH. Career Inclination Test uses scientific approach to identify best career options for students depending on their interest and ability. This test covers seven areas to assess student’s potential. Once the test is completed, report is instantly generated and is ready for downloading. Note: Payment Gateway charges will be applicable extra Visit nearest MS-CIT/KLiC Center. Provide necessary details and test fees. Once your registration is confirmed, ask a slot for Test Conduction. Confirm your Test slot with Center Coordinator. Test duration is 2 Hours. Learner should complete the Test in one go. Learner can attempt the test at Center or at home as per the convenience over computer, laptop or smartphone with internet connectivity",
+      "url": "https://cit.mkcl.org/",
+      "logoUrl": "/images/logos/futurevedh.jpg",
+      "isActive": true,
+      "displayOrder": 18,
+      "createdAt": "2025-12-26T10:17:35.862Z",
+      "updatedAt": "2026-01-09T05:47:22.889Z"
+    },
+    {
+      "id": 423,
+      "name": "MKCL Olympiad Movement",
+      "description": "The MKCL Olympiad Movement offers a state-level competitive examination to assess the academic quality of students from the CBSE Board (English medium) and SSC Board (Marathi, Semi-English, and English medium) for grades 5th to 9th. In addition to the school subjects, the MKCL Olympiad Movement evaluates whether students can apply the knowledge they have gained in real life and if they can use information from one subject to understand others. Students also have the opportunity to learn through assessments. They will experience solving challenging and innovative questions that will stimulate their intellect. Maharashtra Knowledge Corporation Limited (MKCL), is a Public Limited Company incorporated under the then Companies Act, 1956 on August 20, 2001. MKCL was promoted by the Department of Higher and Technical Education, Government of Maharashtra (GoM). On January 05, 2018, the governmental coordination of the Company's affairs was handed over from the Department of Higher and Technical Education to the General Administration Department (GAD), and thereunder, to the Directorate of Information Technology. 5th Floor, ICC Trade Tower, A Wing, Senapati Bapat Road, Shivajinagar, Pune, Maharashtra- 411 016 Plot No. 30, Sector 42-A, Nerul, Navi Mumbai, Maharashtra - 400 706 &copy; 2026 Maharashtra Knowledge Corporation Limited. All Rights Reserved.",
+      "url": "https://mom.mkcl.org/",
+      "logoUrl": "/images/logos/mom.jpg",
+      "isActive": true,
+      "displayOrder": 19,
+      "createdAt": "2025-12-26T10:17:34.320Z",
+      "updatedAt": "2026-01-09T05:47:23.881Z"
+    },
+    {
+      "id": 442,
+      "name": "MKCL’s Tilimili",
+      "description": "TiliMili, an educational serial produced by MKCL Knowledge Foundation and aired on DD Sahyadri in 2020-2021, used interactive plays to reinforce Maharashtra’s curriculum for students in Std. 1 to Std. 8, addressing academic losses due to school closures during the pandemic.",
+      "url": "https://www.mkcl.org/#/solutions/tilimili",
+      "logoUrl": "/images/logos/tilimili.jpg",
+      "isActive": true,
+      "displayOrder": 20,
+      "createdAt": "2025-12-26T10:17:40.054Z",
+      "updatedAt": "2026-01-09T06:19:46.595Z"
+    },
+    {
+      "id": 427,
+      "name": "Easy",
+      "description": "Innovative solution by MKCL",
+      "url": "",
+      "logoUrl": "/images/logos/easy.png",
+      "isActive": true,
+      "displayOrder": 21,
+      "createdAt": "2025-12-26T10:17:35.555Z",
+      "updatedAt": "2025-12-31T06:13:42.600Z"
+    },
+    {
+      "id": 435,
+      "name": "VanMitra",
+      "description": "The MP VanMitra portal (https://mpvanmitra.mkcl.org/\r\n) is an e-governance platform launched by the Government of Madhya Pradesh to facilitate the digitisation and processing of forest rights claims under the Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act, 2006 and its rules and amendments. It has been conceptualised, designed and developed by Maharashtra Knowledge Corporation Ltd. (MKCL) to ensure transparent, streamlined and technology-driven implementation of the Forest Rights Act (FRA).",
+      "url": "https://mpvanmitra.mkcl.org",
+      "logoUrl": "/images/logos/vanmitra.png",
+      "isActive": true,
+      "displayOrder": 22,
+      "createdAt": "2025-12-26T10:17:37.965Z",
+      "updatedAt": "2026-01-09T06:11:44.851Z"
+    },
+    {
+      "id": 445,
+      "name": "Vikasghar",
+      "description": "Innovative solution by MKCL",
+      "url": "",
+      "logoUrl": "https://zob5t7ljpezwj4aw.public.blob.vercel-storage.com/70e6b7fb-523e-4363-9755-5302e2574f5f-MKCL%20Large%20English%20Logo.png",
+      "isActive": true,
+      "displayOrder": 23,
+      "createdAt": "2025-12-26T10:17:40.934Z",
+      "updatedAt": "2025-12-31T06:13:42.600Z"
+    },
+    {
+      "id": 444,
+      "name": "SSC and HSC AI based Practice tests",
+      "description": "Maharashtra Knowledge Corporation Limited (MKCL) was promoted by the Department of Higher and Technical Education, Government of Maharashtra and shifted to General Administration Department (GAD), Government of Maharashtra, India on January 05, 2018.",
+      "url": "https://mockexams.mkcl.org/",
+      "logoUrl": "https://zob5t7ljpezwj4aw.public.blob.vercel-storage.com/6f7f6cfa-149b-43d2-972d-0dc5d92e851d-logo_mockexams.png",
+      "isActive": true,
+      "displayOrder": 24,
+      "createdAt": "2025-12-26T10:17:40.638Z",
+      "updatedAt": "2026-01-09T05:57:17.098Z"
+    }
+  ]
+}

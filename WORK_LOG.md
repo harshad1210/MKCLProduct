@@ -6,6 +6,9 @@
 - **Features**:
     - **UI**: Added 3D Flip Card animation for products.
     - **UX**: "Read More" button triggers flip for descriptions > 108 chars.
+    - **Data**: Enriched product descriptions by scraping official websites (e.g., MS-CIT, KLiC, VanMitra).
+    - **Integration**: Generated `content.json` (static export of production database) for external team integration.
+    - **Versioning**: Standardized project version to `v1.7.5` across `package.json`, Git Tags, and Work Log.
 - **Rollback Plan**:
     - If issues arise, revert to tag `v1.7.4` using: `git reset --hard v1.7.4 && git push -f`
 
